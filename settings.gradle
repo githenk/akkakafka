@@ -1,0 +1,4 @@
+rootProject.name = 'demo.akkakafka'
+include 'demobackend'
+
+

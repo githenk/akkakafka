@@ -1,0 +1,22 @@
+var:
+  app:
+    name: demobackend
+    groupid: demobackend
+    randomrequestnumber: true
+    needreply: true
+    kafka:
+      bootstrap-server: localhost:9092
+      service-topic: aathos
+    logLevel: DEBUG
+app:
+  name: ${var.app.name}
+  groupid: ${var.app.groupid}
+  randomrequestnumber: ${var.app.randomrequestnumber}
+  needreply: ${var.app.needreply}
+kafka:
+  bootstrap-server: ${var.app.kafka.bootstrapserver}
+  service-topic: ${var.app.kafka.service-topic}
+logging:
+  level:
+    demo.akkakafka: ${var.app.loglevel}
+  ROOT: INFO

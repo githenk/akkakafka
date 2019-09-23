@@ -1,0 +1,16 @@
+var:
+  app:
+    name: demo
+    groupid: demo
+    kafka:
+        bootstrap-server: localhost:9092
+    logLevel: DEBUG
+app:
+  name: ${var.app.name}
+  groupid: ${var.app.groupid}
+kafka:
+  bootstrap-server: ${var.app.kafka.bootstrapserver}
+logging:
+  level:
+    demo.akkakafka: ${var.app.loglevel}
+  ROOT: INFO

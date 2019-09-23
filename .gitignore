@@ -1,0 +1,42 @@
+.gradle
+/build/
+gradle/*
+!gradle/wrapper/gradle-wrapper.jar
+.project
+
+### STS ###
+.apt_generated.classpath
+.factorypath.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea*
+.idea/
+.iws*
+*.iml*
+.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+out/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Maven ###
+
+target/
+/bin/
+
+### OS ###
+**/*DS_Store
+
+### Akka Kafka ###
+/kafka_*
+kafka*.tgz
+/akka-quickstart-java
+/demogate
+
