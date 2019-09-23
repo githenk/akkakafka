@@ -3,6 +3,9 @@
 gradle/*
 !gradle/wrapper/gradle-wrapper.jar
 .project
+.classpath
+**/.classpath
+**/bin/
 
 ### STS ###
 .apt_generated.classpath
