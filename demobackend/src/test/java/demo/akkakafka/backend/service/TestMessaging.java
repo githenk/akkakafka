@@ -87,9 +87,6 @@ public class TestMessaging {
     if(messageMap.containsKey(key)){
 
       incomingRequest = serviceRequestReader.readValue(new String(value));
-      // TODO REMOVE DEBUG
-      System.out.println("Consumed message with" + key + " " + incomingRequest.getRequest());
-
       messageMap.get(key).complete(incomingRequest);
       messageMap.remove(key);
     }

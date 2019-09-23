@@ -81,7 +81,6 @@ public class MessageConsumer {
     CompletableFuture<Done> done = new CompletableFuture<>();
     if(messageMap.containsKey(key)){
       String message = new String(value);
-      System.out.println("Consumed message with" + key + " " + message);
       messageMap.get(key).complete(message);
       messageMap.remove(key);
     }
